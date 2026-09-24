@@ -1,0 +1,8 @@
+[build-system]
+requires = []
+build-backend = "backend"
+
+[project]
+name = "food-parcel-regulation"
+version = "0.1.0"
+requires-python = ">=3.11"
