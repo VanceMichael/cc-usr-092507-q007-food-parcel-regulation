@@ -1,5 +1,25 @@
-"""领域资料读取接口。"""
+"""食品寄递线索协同闭环后端。"""
 
-from .context import load_context
+from .backend import Backend
+from .application import PickupObservation
+from .errors import (
+    AuthorizationError,
+    ConflictError,
+    DomainError,
+    NotFoundError,
+    QuarantineError,
+    StaleDecisionError,
+    ValidationError,
+)
 
-__all__ = ["load_context"]
+__all__ = [
+    "Backend",
+    "PickupObservation",
+    "DomainError",
+    "ValidationError",
+    "NotFoundError",
+    "AuthorizationError",
+    "ConflictError",
+    "StaleDecisionError",
+    "QuarantineError",
+]
